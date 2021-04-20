@@ -177,6 +177,17 @@
     display: flex;
     justify-content: space-around;
 }
+
+.button__up{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: #59BD5A;
+    color: white;
+    z-index: 7;
+    margin-top: 90vh;
+    margin-left: 90vw;
+}
 @media screen and (min-width: 768px){
     .restaurants__list{
         grid-template-columns: 1fr 1fr 1fr;
@@ -223,6 +234,10 @@
     }
     .personality-bottom{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        
+    }
+    .button__up{
+        width: 64px;
+        height: 64px;
     }
 }
