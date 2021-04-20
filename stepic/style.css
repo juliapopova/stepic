@@ -30,7 +30,7 @@
     width: 100%;    
 }
 .searchRest__input[placeholder] {
-    font-family: "Roboto", sans-serif;;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -70,6 +70,113 @@
     width: 100%;
 }
 
+.bottom{
+    background-color: #262626;
+    padding: 50px;
+}
+.bottom__logo{
+    width:  190.77px;
+    margin-bottom: 20px;
+}
+
+
+.bottom__line{
+    opacity: 40%;
+}
+.info-bottom{
+    display: grid;
+    grid-template-areas: "language      link1 link4"
+                         "name          link2 link5"
+                         "socialNetwork link3 link6"
+                         "socialNetwork .     link7";
+    grid-template-rows: repeat(4, 1fr);
+}
+.colorGreen{
+    color: #49A144;
+}
+.info-bottom__link, .personality-bottom__link{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.personality-bottom__link {    
+    font-size: 11px;    
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 10px;
+    }
+
+.info-bottom__language{
+    grid-area: language;
+    height: 40px;
+    width: 227px;
+    left: 81px;
+    top: 1617px;
+    border-radius: 2px;
+    background: #3B3B3B;
+    color: white;
+}
+.info-bottom__name{
+    grid-area: name;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+ }
+ .socialNetwork-info-bottom{
+    grid-area: socialNetwork;
+ }
+ .info-grid__link1{
+     grid-area: link1;
+ }
+ .info-grid__link2{
+    grid-area: link2;
+}
+.info-grid__link3{
+    grid-area: link3;
+}
+.info-grid__link4{
+    grid-area: link4;
+}
+.info-grid__link5{
+    grid-area: link5;
+}
+.info-grid__link6{
+    grid-area: link6;
+}
+.info-grid__link7{
+    grid-area: link7;
+}
+
+.store-bottom
+{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.store-bottom__img{
+    height: 38.25px;
+    width: auto;
+    margin: 5px;
+}
+
+.personality-bottom{
+    display: flex;
+    justify-content: space-around;
+}
 @media screen and (min-width: 768px){
     .restaurants__list{
         grid-template-columns: 1fr 1fr 1fr;
@@ -94,5 +201,28 @@
     }
     .item-restaurant{
         margin: 0px;
+    }
+    .info-bottom{
+        grid-template-areas: "language"
+                             "name"
+                             "socialNetwork"
+                             "link1"
+                             "link2"
+                             "link3"
+                             "link4"
+                             "link5"
+                             "link6"
+                             "link7"
+                             ".";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10,1fr);
+    }
+    .store-bottom__img{
+        height: 34.43px;
+        width: auto;
+    }
+    .personality-bottom{
+        display: flex;
+        flex-direction: column;
     }
 }
