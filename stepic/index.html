@@ -10,15 +10,15 @@
 </head>
 
 <body>
+    <a href="#main"><button class="button__up">↑</button></a>    
     <header class="header">
         <div class="headerRest">
             <img src="image/header/logo.png" alt="logo" class="headerRest__logo">
             <button class="headerRest__enter">Войти</button>
             <a href="#" class="headerRest__basket"><img src="image/header/basket.svg" alt="basket"></a>
-        </div>
-        
+        </div>        
     </header>
-    <div class="main">
+    <div class="main" id="main">
         <div class="searchRest">
             <input type="search" class="searchRest__input" placeholder="Поиск по ресторанам и кухням">
         </div>
@@ -81,8 +81,46 @@
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="bottom">
+            <img class="bottom__logo" src="image/bottom/white-logo.svg" alt="image logo">
+            <hr class="bottom__line">
+            <div class="info-bottom">
+                <div class="language-info-bottom">    
+                    <img src="image/bottom/lang.png" class="language-info-bottom__img">                 
+                    <select name="language" id="language" class="language-info-bottom__select">
+                        <option>Русский</option>
+                        <option>Английский</option>
+                    </select>                    
+                </div>                
+                <p class="info-bottom__name"><span class="colorGreen">#</span>UberEats</p>
+                <div class="socialNetwork-info-bottom">
+                    <a href="#" class="socialNetwork-info-bottom__a"><img src="image/bottom/social/facebook.png" alt="link facebook"></a>
+                    <a href="#" class="socialNetwork-info-bottom__a"><img src="image/bottom/social/twitter.png" alt="link twitter"></a>
+                    <a href="#" class="socialNetwork-info-bottom__a"><img src="image/bottom/social/instagram.png" alt="link instagram"></a>                
+                </div>
+               <a class="info-bottom__link info-grid__link1" href="#">Об UberEats</a>
+               <a class="info-bottom__link info-grid__link2" href="#">Станьте партнером по доставке</a>
+               <a class="info-bottom__link info-grid__link3" href="#">Станьте партнером-рестораном</a>
+               <a class="info-bottom__link info-grid__link4" href="#">Все города</a>
+               <a class="info-bottom__link info-grid__link5" href="#">Цены</a>
+               <a class="info-bottom__link info-grid__link6" href="#">Помощь</a>
+               <a class="info-bottom__link info-grid__link7" href="#">FAQs</a>
+            </div>
+            <hr class="bottom__line">
+            <div class="store-bottom">
+                <a href="#"><img src="image/bottom/store/app.png" alt="link apple store" class="store-bottom__img"></a>
+                <a href="#"><img src="image/bottom/store/google.png" alt="link google play" class="store-bottom__img"></a>
+            </div>
+            <hr class="bottom__line">
+            <div class="personality-bottom">
+                <a href="#" class="personality-bottom__link">© 2017 Ubeer Technologies Inc.</a>
+                <a href="#" class="personality-bottom__link">Обработка персональных данных</a>
+                <a href="#" class="personality-bottom__link">Пользовательское соглашение</a>
+            </div>
+        </div>
+    </div>    
+    
 </body>
 
 </html>
