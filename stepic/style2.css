@@ -1,0 +1,240 @@
+
+.header{    
+    display: flex; 
+    height: 50px;
+    width: 100%;    
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+    z-index: 6;
+    top:0;
+    left: 0;
+    position: fixed;
+    justify-content: center; 
+}
+.headerRest{
+    display: flex;  
+    flex-direction: row;
+    align-items: center;    
+    justify-content: flex-end;
+    width: 80%;
+}
+.headerRest__logo{
+    margin-right: auto;
+}
+.headerRest__enter, headerRest__basket {
+    margin: 10px;
+}
+.headerRest__enter{
+    width: 78px;
+    height: 40px;
+    background-color: white;
+    color: #1D1D1D;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.main{
+    position: relative;
+    top: 65px;
+    width: 100%;    
+}
+
+.bottom{
+    background-color: #262626;
+    padding: 50px;
+}
+.bottom__logo{
+    width:  190.77px;
+    margin-bottom: 20px;
+}
+
+.bottom__line{
+    opacity: 40%;
+}
+.info-bottom{
+    display: grid;
+    grid-template-areas: "language      link1 link4"
+                         "name          link2 link5"
+                         "socialNetwork link3 link6"
+                         "socialNetwork .     link7";
+    grid-template-rows: repeat(4, 1fr);
+}
+.colorGreen{
+    color: #49A144;
+}
+.info-bottom__link, .personality-bottom__link{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.personality-bottom__link {    
+    font-size: 11px;    
+    line-height: 13px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 10px;
+    }
+
+.language-info-bottom{
+     position: relative;
+ }   
+.language-info-bottom__img{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.language-info-bottom__select{
+    box-sizing: border-box;
+    grid-area: language;
+    height: 40px;
+    width: 200px;
+    left: 81px;
+    top: 1617px;
+    border-radius: 2px;
+    background: #3B3B3B;
+    color: white;
+    text-align-last:center;
+}
+.info-bottom__name{
+    grid-area: name;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+ }
+ .socialNetwork-info-bottom{
+    grid-area: socialNetwork;
+ }
+ .info-grid__link1{
+     grid-area: link1;
+ }
+ .info-grid__link2{
+    grid-area: link2;
+}
+.info-grid__link3{
+    grid-area: link3;
+}
+.info-grid__link4{
+    grid-area: link4;
+}
+.info-grid__link5{
+    grid-area: link5;
+}
+.info-grid__link6{
+    grid-area: link6;
+}
+.info-grid__link7{
+    grid-area: link7;
+}
+
+.store-bottom
+{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.store-bottom__img{
+    height: 38.25px;
+    width: auto;
+    margin: 5px;
+}
+
+.personality-bottom{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button__up{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    background-color: #59BD5A;
+    color: white;
+    z-index: 7;
+    bottom: 25px;
+    right: 25px;
+}
+.item-restaurant__name{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left; 
+    color:  #1D1D1D;  
+}
+.item-restaurant__food{    
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;  
+    color: #626262;
+}
+.item-restaurant__time{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #1D1D1D;    
+}
+@media screen and (min-width: 768px){
+   
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 320px){
+    
+    .info-bottom{
+        grid-template-areas: "language"
+                             "name"
+                             "socialNetwork"
+                             "link1"
+                             "link2"
+                             "link3"
+                             "link4"
+                             "link5"
+                             "link6"
+                             "link7"
+                             ".";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10,1fr);
+    }
+    .store-bottom__img{
+        height: 34.43px;
+        width: auto;
+    }
+    .personality-bottom{
+        display: flex;
+        flex-direction: column;        
+    }
+    .button__up{
+        width: 64px;
+        height: 64px;
+    }
+}
