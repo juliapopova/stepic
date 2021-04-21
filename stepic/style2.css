@@ -39,7 +39,7 @@
 }
 .main{
     position: relative;
-    top: 65px;
+    top: 10px;
     width: 100%;    
 }
 
@@ -200,16 +200,78 @@
     text-align: left;
     color:  #1D1D1D;    
 }
+
+.info{
+    background-image: url("image/pushkin/pushkin.png");
+    height: 364px;
+	margin: 72px auto 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-info{
+    position: relative;
+    background-color: white;
+    height: 204px;    
+    left: 81px;
+    top: 80px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+.box-info__name{
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D1D1D;
+    margin: 10px;
+}
+.box-info__food{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    padding: 10px;
+    color: #626262;
+    margin: 10px;
+}
+.box-info__time{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;       
+    color: white;
+    background: #262626;
+    border-radius: 16px;
+    height: 1em;
+    padding: 10px;
+    margin: 10px;
+    justify-self: self-end;
+}
+
 @media screen and (min-width: 768px){
-   
+    .box-info{ 
+        width: 389px;     
+    }
 }
 
 @media screen and (max-width: 768px){
-    
+    .box-info{
+        width: 432px;       
+    }
 }
 
-@media screen and (max-width: 320px){
-    
+@media screen and (max-width: 320px){    
     .info-bottom{
         grid-template-areas: "language"
                              "name"
@@ -236,5 +298,18 @@
     .button__up{
         width: 64px;
         height: 64px;
+    }
+    .info{
+        height: 364px;
+	    margin: 72px auto 0;
+        left: 0px;
+        top: 72px;
+        border-radius: 0px;
+    }
+    .box-info{
+        height: 180px;
+        width: 300px;
+        left: 0px;
+        top: 160px;
     }
 }
