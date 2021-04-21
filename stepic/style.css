@@ -24,6 +24,19 @@
 .headerRest__enter, headerRest__basket {
     margin: 10px;
 }
+.headerRest__enter{
+    width: 78px;
+    height: 40px;
+    background-color: white;
+    color: #1D1D1D;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
 .main{
     position: relative;
     top: 65px;
@@ -35,9 +48,13 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: #626262;
+    color: #1D1D1D;
     mix-blend-mode: normal;
-    opacity: 0.5;
+
+    border: none;
+    border-bottom: 1px solid #e0e0e0;  
+    background-color: transparent;
+    outline: none;
 }
 .searchRest__input{
     width: 90%;
@@ -185,8 +202,38 @@
     background-color: #59BD5A;
     color: white;
     z-index: 7;
-    margin-top: 90vh;
-    margin-left: 90vw;
+    bottom: 25px;
+    right: 25px;
+}
+.item-restaurant__name{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left; 
+    color:  #1D1D1D;  
+}
+.item-restaurant__food{    
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;  
+    color: #626262;
+}
+.item-restaurant__time{
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #1D1D1D;    
 }
 @media screen and (min-width: 768px){
     .restaurants__list{
