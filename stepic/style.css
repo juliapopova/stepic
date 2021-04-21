@@ -131,15 +131,25 @@
     margin: 10px;
     }
 
-.info-bottom__language{
+.language-info-bottom{
+     position: relative;
+ }   
+.language-info-bottom__img{
+    position: absolute;
+    top: 12px;
+    left: 10px;
+}
+.language-info-bottom__select{
+    box-sizing: border-box;
     grid-area: language;
     height: 40px;
-    width: 227px;
+    width: 200px;
     left: 81px;
     top: 1617px;
     border-radius: 2px;
     background: #3B3B3B;
     color: white;
+    text-align-last:center;
 }
 .info-bottom__name{
     grid-area: name;
