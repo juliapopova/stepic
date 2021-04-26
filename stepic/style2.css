@@ -40,7 +40,7 @@
 .main{
     position: relative;
     top: 10px;
-    width: 100%;    
+    width: 100%;  
 }
 
 .bottom{
@@ -282,7 +282,6 @@
 .appetizers-filtr{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    text-align: center;
 }
 .item-appetizers-filtr{
     display:grid;
@@ -331,6 +330,9 @@
     }
     .appetizers-filtr{
         grid-template-columns: 1fr;
+    }
+    .filtr__name{
+        margin-left: 0px;
     }
 }
 
@@ -401,5 +403,6 @@
     .headerRest__basket{
         display: none;
     }
+    
     
 }
